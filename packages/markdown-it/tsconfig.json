@@ -1,0 +1,11 @@
+{
+    "include": ["src"],
+    "compilerOptions": {
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "module": "NodeNext",
+        "target": "ESNext",
+        "outDir": "dist",
+        "declaration": true
+    }
+}

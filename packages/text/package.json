@@ -16,5 +16,6 @@
         "@types/node": "^20.12.7",
         "previewed": "^1.0.0",
         "typescript": "^5.4.5"
-    }
+    },
+    "repository": "https://github.com/danielFHcode/previewed.js/"
 }

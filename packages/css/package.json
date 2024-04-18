@@ -20,5 +20,6 @@
     },
     "dependencies": {
         "jsdom": "^24.0.0"
-    }
+    },
+    "repository": "https://github.com/danielFHcode/previewed.js/"
 }

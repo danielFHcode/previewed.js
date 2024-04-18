@@ -16,5 +16,6 @@
         "@types/markdown-it": "^14.0.1",
         "previewed": "^1.0.0",
         "typescript": "^5.4.5"
-    }
+    },
+    "repository": "https://github.com/danielFHcode/previewed.js/"
 }

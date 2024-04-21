@@ -1,0 +1,16 @@
+{
+    "name": "2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "nx run-many -t build",
+        "dev": "nx run-many -t dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nx": "18.3.3"
+    }
+}

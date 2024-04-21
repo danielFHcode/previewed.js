@@ -1,2 +1,6 @@
 # for trying out the library while working on it
 asdf
+
+node_modules
+
+.nx/cache

@@ -2,3 +2,5 @@
 asdf
 
 node_modules
+
+.nx/cache

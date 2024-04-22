@@ -27,7 +27,7 @@ export default function watch({
             return file;
         }
         dirs.add(options.dir);
-        const dom = new JSDOM(file);
+        const dom = new JSDOM(file.toString());
         const script = dom.window.document.createElement('script');
         script.innerHTML = `new WebSocket('ws://${host}:${port}').addEventListener('message', () => location.reload())`;
         dom.window.document.body.appendChild(script);

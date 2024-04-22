@@ -3,14 +3,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 export type Plugin = (
-    file: Buffer,
+    file: string,
     filePath: string,
     options: {
         host: string;
         port: number;
         dir: string;
     }
-) => Buffer;
+) => string;
 
 export default function init({
     dir,
@@ -27,7 +27,9 @@ export default function init({
     app.get('/**', async (req, res) => {
         try {
             const filePath = path.join(dir, req.url);
-            const file = await fs.readFile(filePath);
+            const file = await fs
+                .readFile(filePath)
+                .then((buffer) => buffer.toString());
             const processedFiles = plugins.reduce((file, plugin) => {
                 return plugin(file, filePath, { host, port, dir });
             }, file);

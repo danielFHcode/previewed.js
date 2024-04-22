@@ -31,7 +31,7 @@ export default function watch({
         const script = dom.window.document.createElement('script');
         script.innerHTML = `new WebSocket('ws://${host}:${port}').addEventListener('message', () => location.reload())`;
         dom.window.document.body.appendChild(script);
-        return Buffer.from(dom.serialize());
+        return dom.serialize();
     };
     return plugin;
 }

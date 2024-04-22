@@ -5,12 +5,11 @@ export default function text({ filetypes = ['txt'] } = {}) {
         for (const filetype of filetypes) {
             if (!filePath.endsWith(`.${filetype}`)) return file;
         }
-        return Buffer.from(`
+        return `
         <!DOCTYPE html>
         <html>
             <body>
                 ${file
-                    .toString()
                     .replaceAll('&', '&amp;')
                     .replaceAll('<', '&lt;')
                     .replaceAll('>', '&gt;')
@@ -18,7 +17,7 @@ export default function text({ filetypes = ['txt'] } = {}) {
                     .replaceAll(' ', '&nbsp;')}
             </body>
         </html>
-        `);
+        `;
     };
     return plugin;
 }

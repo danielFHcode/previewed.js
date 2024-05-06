@@ -33,7 +33,7 @@ export default function init({
             const processedFiles = plugins.reduce((file, plugin) => {
                 return plugin(file, filePath, { host, port, dir });
             }, file);
-            res.setHeader('Content-Disposition', 'inline');
+            res.set('Content-Type', 'text/html');
             res.send(processedFiles);
         } catch {
             res.send(`No file at path ${req.url}`);

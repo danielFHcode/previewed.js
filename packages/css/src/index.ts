@@ -6,7 +6,7 @@ export default function css(css: string, { filetypes = ['html'] } = {}) {
         if (filetypes.every((filetype) => !filePath.endsWith(`.${filetype}`))) {
             return file;
         }
-        const jsdom = new JSDOM(file);
+        const jsdom = new JSDOM(file.toString());
         const style = jsdom.window.document.createElement('style');
         style.innerHTML = css;
         jsdom.window.document.head.appendChild(style);

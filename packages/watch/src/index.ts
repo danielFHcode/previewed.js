@@ -29,7 +29,15 @@ export default function watch({
         dirs.add(options.dir);
         const dom = new JSDOM(file.toString());
         const script = dom.window.document.createElement('script');
-        script.innerHTML = `new WebSocket('ws://${host}:${port}').addEventListener('message', () => location.reload())`;
+        script.innerHTML = `
+        new WebSocket('ws://${host}:${port}').addEventListener('message', async () => {
+            document.body.style.opacity = '50%';
+            const html = await fetch(location.href).then(response => response.text());
+            const doc = new DOMParser().parseFromString(html, 'text/html');
+            document.body.innerHTML = doc.body.innerHTML;
+            document.body.style.opacity = '100%';
+        })
+        `;
         dom.window.document.body.appendChild(script);
         return dom.serialize();
     };

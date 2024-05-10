@@ -39,7 +39,7 @@ export default function watch({
         })
         `;
         dom.window.document.body.appendChild(script);
-        return dom.serialize();
+        return Buffer.from(dom.serialize());
     };
     return plugin;
 }

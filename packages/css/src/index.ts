@@ -10,7 +10,7 @@ export default function css(css: string, { filetypes = ['html'] } = {}) {
         const style = jsdom.window.document.createElement('style');
         style.innerHTML = css;
         jsdom.window.document.head.appendChild(style);
-        return jsdom.serialize();
+        return Buffer.from(jsdom.serialize());
     };
     return plugin;
 }

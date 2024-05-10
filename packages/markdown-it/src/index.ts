@@ -9,14 +9,14 @@ export default function markdownIt(
         if (filetypes.every((filetype) => !filePath.endsWith(`.${filetype}`))) {
             return file;
         }
-        return `
+        return Buffer.from(`
         <!DOCTYPE html>
         <html>
             <body>
-                ${markdownIt.render(file)}
+                ${markdownIt.render(file.toString())}
             </body>
         </html>
-        `;
+        `);
     };
     return plugin;
 }

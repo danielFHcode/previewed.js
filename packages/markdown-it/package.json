@@ -1,21 +1,21 @@
 {
-    "name": "@previewed/plugin-markdown-it",
-    "version": "1.1.0-alpha.1",
-    "description": "",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "type": "module",
-    "scripts": {
-        "build": "tsc",
-        "dev": "tsc --watch --sourceMap"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@types/markdown-it": "^14.0.1",
-        "previewed": "1.0.0",
-        "typescript": "^5.4.5"
-    },
-    "repository": "https://github.com/danielFHcode/previewed.js/"
+  "name": "@previewed/plugin-markdown-it",
+  "version": "1.1.0-alpha.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --sourceMap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/markdown-it": "^14.0.1",
+    "previewed": "^1.1.0-alpha.0",
+    "typescript": "^5.4.5"
+  },
+  "repository": "https://github.com/danielFHcode/previewed.js/"
 }

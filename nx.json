@@ -7,5 +7,8 @@
             "cache": true
         }
     },
-    "defaultBase": "master"
+    "defaultBase": "master",
+    "release": {
+        "projects": ["packages/*"]
+    }
 }

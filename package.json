@@ -5,12 +5,15 @@
     "main": "index.js",
     "scripts": {
         "build": "nx run-many -t build",
-        "dev": "nx run-many -t dev --parallel 5"
+        "dev": "nx run-many -t dev --parallel 5",
+        "version": "nx release version",
+        "publish": "nx release publish"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@nx/js": "^19.0.2",
         "nx": "18.3.3"
     }
 }

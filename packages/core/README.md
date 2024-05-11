@@ -121,12 +121,16 @@ And you can see your text file, with a Sans Serif font and a red color, at `http
 
 A plugin is simply a function, that runs every time a file is rendered by the server, it takes in 3 arguments:
 
--   **file:** this is a `string` contains the contents of the given file.
+-   **file:** this is a `Buffer` contains the contents of the given file.
 -   **filePath:** this is a `string` of the given file's path.
 -   **options:** this is an `object` contains additional options specified in the options of the `init` function:
     -   **host:** the host of the running server.
     -   **port:** the port of the running server.
     -   **dir:** the directory of the rendered files.
+
+And returns:
+
+-   A `Buffer` containing the transformed contents of the file.
 
 ### Example Plugin
 
@@ -136,7 +140,7 @@ This plugin adds a specified prefix to any text file:
 export default function prefixer(prefix) {
     return (file, filePath) => {
         if (!filePath.endsWith('.txt')) return file;
-        return prefix + file;
+        return Buffer.from(prefix + file.toString());
     };
 }
 ```

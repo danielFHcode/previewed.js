@@ -7,7 +7,8 @@
         "build": "nx run-many -t build",
         "dev": "nx run-many -t dev --parallel 5",
         "version": "nx release version",
-        "publish": "nx release publish"
+        "publish": "nx release publish",
+        "publish:next": "nx release publish --tag next"
     },
     "keywords": [],
     "author": "",

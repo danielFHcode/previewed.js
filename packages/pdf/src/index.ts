@@ -10,7 +10,7 @@ export default function pdf({
         return Buffer.from(`
         <!DOCTYPE html>
         <html>
-            <body>
+            <body style="margin: 0;">
                 <iframe
                     src="data:application/pdf;base64,${file.toString('base64')}"
                     style="width: 100%; height: 100%; position: absolute;"

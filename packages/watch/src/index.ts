@@ -16,7 +16,7 @@ export default function watch({
     const dirs = new Set<string>();
     server.on('connection', (socket) => {
         dirs.forEach((dir) => {
-            fs.watch(dir, () => {
+            fs.watch(dir, { recursive: true }, () => {
                 socket.send('update');
             });
         });

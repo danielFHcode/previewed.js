@@ -1,6 +1,6 @@
 {
     "name": "@previewed/plugin-pdf",
-    "version": "1.1.0-alpha.0",
+    "version": "1.1.1-alpha.0",
     "description": "",
     "main": "dist/index.js",
     "type": "module",
@@ -12,7 +12,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "previewed": "workspace:^1.1.0-alpha.0",
+        "previewed": "1.1.1-alpha.0",
         "typescript": "^5.4.5"
     }
 }

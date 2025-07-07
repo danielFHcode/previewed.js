@@ -8,7 +8,7 @@ For example, you might use this library to open a local server that renders your
 
 You can install using npm (or pnpm, or yarn, or bun, or whatever else):
 
-```bash
+```
 npm install previewed
 ```
 

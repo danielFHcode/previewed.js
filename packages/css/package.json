@@ -1,25 +1,25 @@
 {
-  "name": "@previewed/plugin-css",
-  "version": "1.1.0-alpha.0",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch --sourceMap"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/jsdom": "^21.1.6",
-    "@types/node": "^20.12.7",
-    "previewed": "^1.1.0-alpha.0",
-    "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "jsdom": "^24.0.0"
-  },
-  "repository": "https://github.com/danielFHcode/previewed.js/"
+    "name": "@previewed/plugin-css",
+    "version": "1.1.1-alpha.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch --sourceMap"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jsdom": "^21.1.6",
+        "@types/node": "^20.12.7",
+        "previewed": "^1.1.1-alpha.0",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "jsdom": "^24.0.0"
+    },
+    "repository": "https://github.com/danielFHcode/previewed.js/"
 }

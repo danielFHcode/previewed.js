@@ -1,6 +1,6 @@
 {
     "name": "@previewed/plugin-watch",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
         "@types/jsdom": "^21.1.6",
         "@types/node": "^20.12.7",
         "@types/ws": "^8.5.10",
-        "previewed": "1.0.0",
+        "previewed": "1.0.1",
         "typescript": "^5.4.5"
     },
     "dependencies": {

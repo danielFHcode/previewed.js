@@ -1,6 +1,6 @@
 {
     "name": "@previewed/plugin-markdown-it",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -14,7 +14,7 @@
     "license": "ISC",
     "devDependencies": {
         "@types/markdown-it": "^14.0.1",
-        "previewed": "1.0.0",
+        "previewed": "1.0.1",
         "typescript": "^5.4.5"
     },
     "repository": "https://github.com/danielFHcode/previewed.js/"
